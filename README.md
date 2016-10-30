@@ -26,6 +26,10 @@ $ bower install bootstrap --save
 
 npm 在package.json 中的script节点中可以定义脚本任务，
 
+API的概念：
+应用程序编程接口
+
+
 ## step-02 抽象数据成员，以假数据的方式设计控制器和视图
 
 
