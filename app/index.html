@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN" ng-app="myApp">
+<html lang="zh-CN" ng-app="doubanApp">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My AngularJS App</title>
+  <title>豆瓣电影</title>
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="app.css">
 </head>
@@ -18,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">豆瓣电影</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
@@ -32,15 +32,15 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">正在热映</a></li>
+            <li class="active"><a href="#/in_theaters">正在热映</a></li>
             <li><a href="#">即将上映</a></li>
             <li><a href="#">TOP250</a></li>
           </ul>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
-
-          <view></view>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view>
+<!--           <h1 class="page-header">豆瓣电影</h1>
+ -->
+          <div ></div>
         </div>
       </div>
     </div>

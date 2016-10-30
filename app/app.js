@@ -2,15 +2,15 @@
 	'use strict';
 
 	// Declare app level module which depends on views, and components
-	angular.module('myApp', [
+	angular.module('doubanApp', [
 	  'ngRoute',
-	  'myApp.in_theaters',
-	  'myApp.coming_soon',
-	  'myApp.top250',
-	  'myApp.version'
+	  'doubanApp.in_theaters',
+	  'doubanApp.coming_soon',
+	  'doubanApp.top250'
+	  /*'doubanApp.version'*/
 	]).
 	config(['$routeProvider', function($routeProvider) {
-	  $routeProvider.otherwise({redirectTo: '/in_theaters/view'});
+	  $routeProvider.otherwise({redirectTo: '/in_theaters'});
 	}]);
 
 

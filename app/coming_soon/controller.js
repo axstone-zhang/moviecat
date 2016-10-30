@@ -1,7 +1,7 @@
 (function(angular){
 	'use strict';
 
-	angular.module('myApp.coming_soon', ['ngRoute'])
+	angular.module('doubanApp.coming_soon', ['ngRoute'])
 
 	.config(['$routeProvider', function($routeProvider) {
 	  $routeProvider.when('/coming_soon', {

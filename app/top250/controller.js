@@ -1,7 +1,7 @@
 (function(angular){
 	'use strict';
 
-	angular.module('myApp.top250', ['ngRoute'])
+	angular.module('doubanApp.top250', ['ngRoute'])
 
 	.config(['$routeProvider', function($routeProvider) {
 	  $routeProvider.when('/top250', {
