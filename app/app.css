@@ -206,3 +206,18 @@ body {
 .pager a{
   cursor: pointer;
 }
+.mask{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.4);
+  z-index: 2000;
+}
+.mask p{
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20%;
+}

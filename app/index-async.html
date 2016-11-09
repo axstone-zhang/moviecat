@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>异步加载库</title>
+	<!-- load.js script.js 都可以帮我们异步加载js文件-->
+	<script src="./bower_components/script.js/dist/script.min.js"></script>
+	<script src="./bower_components/angular-loader/angular-loader.min.js"></script>
+	<script>
+		// $script('you want to load',function(){
+		// });
+		
+		//angular-loader的作用就是在使用一些异步加载脚本的库的时候，自动控制依赖顺序
+		$script([
+			'./bower_components/angular/angular.min.js',
+			'./bower_components/angular-route/angular-route.js',
+			'./movie_list/controller.js',
+			'./components/http.js',
+			'./components/auto-focus.js',
+			'./app.js'
+			],function(){
+				angular.bootstrap(document,['doubanApp']);
+			});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
